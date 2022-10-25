@@ -67,5 +67,34 @@
              <!-- 3.5 lien nous permettant de télécharger un fichier -->
              <p>télécharger<a href="planning.pdf.zip">le planning de la formation</a></p>
 
+             <!-- 4-les images -->
+             <!-- sans utiliser les nouveaux formats webp et avif (25% plus compacts que le png), une règle pourrait être:
+             on utilise une photo=>jpeg
+             on utilise un graphique avec peu de couleur=>png 8bit
+             on utilise un graphique avec bcp de couleur=> png 24bits
+             une image animée=> gif
+             on utilise jamais de bmp
+             attention au nomamage de vos photos, pour le référencement, il est nécessaire d'utilier un nom en minuscule,sans accent par underscore_(touche du 8) -->
+
+             <!-- on se sert de la balise orpheline <img> cette dernière a 2 attributs obligatoires:
+             src="" ^pour indiquer la source; -->
+             <!-- alt="" pour indiquer un texte alternatif qui servira aux personnes en situation hanticap, au moteur de recherche et éventuellement, en texte de back-up si l'image ne se  charge pas correctement -->
+
+             <!-- mon image et utile à la compréhension et au SEO/WCAG? alors elle passe en HTML
+             elle sert à rendre mon site attrayant (ex: bannière)? alors elle pass en CSS -->
+             <!-- si on souhaite indiquer que l'image a de l'importance, alors on l'intègre dans une <figure></figure> -->
+             <figure>
+                <img src="../chien.jpg" alt="je suis perdue" width="500px";>
+                <!-- on rajoute une "caption" pour améliorer la compréhension -->
+                <figcaption>bonjour je suis chien chien</figcaption>
+
+             </figure>
+             <!-- on peut rajouter des sources externes -->
+             voici une image chargée depuis une source externe: <br>
+             <p><img src="https://img.freepik.com/photos-gratuite/chat-rouge-blanc-je-studio-blanc_155003-13189.jpg?w=740&t=st=1666687078~exp=1666687678~hmac=9720ff370a93b80e0dccad47b4350d87b3895eae2dbe22460920caf0dd9fa9a1" alt="c'est un tigre!" title="hum" width="400px;
+                ">
+            </p>
+
+
 </body>
 </html>

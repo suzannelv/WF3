@@ -1,0 +1,50 @@
+/*mon fichier CSS*/
+/*on sélectionne toutes les balises sémantiques du même type*/
+/*le h1 et b seront la même couleur grâce à la virgule*/
+
+h1, b{
+    color:blueviolet
+}
+/*classe avec .*/
+.bienvenu{
+    color:coral
+}
+/*id avec #*/
+#construction{
+    color:blue
+    
+}
+/*on modifie la talle de notre image en indiquant soit la largeur(width) soit la hauteur (height)*/
+#logo{
+    width: 200px;
+}
+/*on va créer notre premier helper!*/
+/*si je sais que je vais réutiliser plusieur fois la même propriété sur plusieurs éléments, alors je crée une classe pour écrire moins de code*/
+/*points sur les convention de nommage:
+textCenter: camel case
+text-center: kebab case
+text_center: snack case
+TEXT_CENTER: Upper case
+il en existe d'autres, mais moins utilisés
+*/
+.text-center{
+    text-align: center;
+}
+.big-font{
+    font-size: 25px;
+}
+
+/*continuont avec les sélecteurs avancés*/
+/*le sélecteur universel avec éoile *  */
+*{
+
+}
+
+/*je sélectionne toutes les balises strong dans le parent qui a la classe container*/
+.container strong{
+    color:darkgreen
+}
+/*je sélectionne une balise qui possède un attribut*/
+p[title]{
+    color:brown
+}
