@@ -1,0 +1,240 @@
+*{
+	margin: 0;
+	padding:0;
+}
+body{
+	background-color: azure;
+	background-image: url(https://img.freepik.com/photos-gratuite/planche-bois-fond-flou-nature_1253-92.jpg?w=1380&t=st=1666872174~exp=1666872774~hmac=f769faab60acbb5ebb579ef2ed6daccbd1a1066cf19ae5c153e14e7f69a3cc4d);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+
+	
+}
+
+a{
+	text-decoration: none;
+}
+a:hover{
+	background-color: wheat;
+	color: cadetblue;
+}
+a:active{
+	background-color: yellow;
+	font-size: 16px;
+}
+
+.intro{
+	font-size:24px; 
+	text-align: center;
+    
+}
+.summary{
+	line-height: 1.5em;
+}
+.preamble{
+	line-height: 2em;
+}
+
+h1{
+	font-size: 60px;
+	text-shadow: 2px 2px 4px #000;
+	color: white;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2{
+	text-shadow: 0 0 3px yellowgreen;
+}
+h3
+
+
+.main{
+	display: flex;
+	
+	flex-direction: column;
+	justify-content: space-around;
+
+    margin-top: 50px;
+}
+.explanation{
+	font-size: 20px;
+	margin-top: 50px;
+	margin-left: 50px;
+	width: 900px;
+	height: 300px;
+	text-align: center;
+	background-color: blanchedalmond;
+	border-radius: 30px;
+	border-right: solid 5px burlywood;
+	border-bottom: solid 5px burlywood;
+	
+	box-shadow: 20px 20px 10px rgb(240, 203, 152);
+	background:url(https://img.freepik.com/free-vector/watercolour-background-with-leaves_91008-314.jpg?size=626&ext=jpg&ga=GA1.2.54881017.1666685743&semt=sph);
+	background-size: cover;
+	
+	
+
+}
+.explanation:hover{
+	transform: scale(1.2);
+}
+.participation{
+	font-size: 20px;
+	margin-top: 50px;
+	margin-left: 500px;
+	width: 900px;
+	height: 300px;
+	text-align: center;
+	background-color: blanchedalmond;
+	border-radius: 30px;
+	border-right: solid 5px burlywood;
+	border-bottom: solid 5px burlywood;
+	
+	box-shadow: 20px 20px 10px rgb(240, 203, 152);
+	background:url(https://img.freepik.com/free-vector/watercolour-background-with-leaves_91008-314.jpg?size=626&ext=jpg&ga=GA1.2.54881017.1666685743&semt=sph);
+	background-size: cover;
+	
+}
+.participation:hover{
+	transform: scale(1.2);
+}
+.benefits{
+	font-size: 20px;
+   margin-top: 70px;
+   margin-left: 300px;
+   text-align: center;
+    width: 500px;
+	height: 300px;
+	background-color: blanchedalmond;
+	border-radius: 100px;
+	border-right: solid 5px burlywood;
+	border-bottom: solid 5px burlywood;
+	overflow: hidden;
+	
+	box-shadow: 20px 20px 10px rgb(240, 203, 152);
+	background:url(https://img.freepik.com/free-vector/watercolour-background-with-leaves_91008-314.jpg?size=626&ext=jpg&ga=GA1.2.54881017.1666685743&semt=sph);
+	background-size: cover;
+}
+.benefits:hover{
+	transform: scale(1.2);
+}
+
+.requirements{
+	font-size: 20px;
+	font-weight: bold;
+	
+	margin-left:1500px;
+
+    height:450px;
+	width: 1000px;
+
+	border-radius: 30px;
+
+	text-align:center;
+	box-shadow: 20px 20px 10px rgb(240, 203, 152);
+	border-right: solid 5px burlywood;
+	border-bottom: solid 5px burlywood;
+	background:url(https://img.freepik.com/free-vector/watercolour-background-with-leaves_91008-314.jpg?size=626&ext=jpg&ga=GA1.2.54881017.1666685743&semt=sph);
+	background-size: cover;
+	position: absolute;
+	top:0%;
+
+
+
+	
+}
+
+.requirements:hover{
+	transform: scale(1.2);
+}
+footer{
+	font-size: 18px;
+	
+	margin-left: 1200px;
+	 width: 300px;
+	 height: 50px;
+	 background-color: rgba(255, 235, 205, 0.877);
+	
+	 border-radius: 30px;
+	 border-right: solid 5px burlywood;
+	border-bottom: solid 5px burlywood;
+	 text-align: center;
+
+	 box-shadow: 20px 20px 10px rgb(240, 203, 152);
+	
+	
+	
+
+}
+footer:hover{
+	transform: scale(2);
+}
+.sidebar .wrapper{
+    margin-top: 60px;
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100vw;
+	height: 200px;
+	
+	justify-content: space-around;
+	background:url(https://img.freepik.com/free-photo/top-view-towels-cream-spa_23-2148223753.jpg?size=626&ext=jpg&ga=GA1.2.54881017.1666685743&semt=sph);
+	background-size: cover;
+	
+}
+	
+.design-selection{
+	font-size: 18px;
+	font-weight: 800;
+	color:rgb(11, 37, 37);
+	background-color: rgba(255, 235, 205, 0.76);
+
+	width: 500px;
+	height: 200px;
+	border-radius: 300px;
+	box-shadow: 20px 20px 10px rgb(240, 203, 152);
+	text-align: center;
+	border-right: solid 5px burlywood;
+	border-bottom: solid 5px burlywood;
+	
+	
+}
+.design-selection:hover{
+	transform: scale(1.2);
+}
+
+
+.design-archives{
+	width: 120px;
+	height: 120px;
+	font-size: 18px;
+	border-radius: 60px;
+	background-color:rgba(255, 235, 205, 0.664);
+	margin-top: 20px;
+	box-shadow: 20px 20px 10px rgb(240, 203, 152);
+	text-align: justify;
+	text-align: center;
+	border-right: solid 5px burlywood;
+	border-bottom: solid 5px burlywood;
+
+}
+
+
+.design-archives:hover{
+	transform: scale(1.2);
+
+}
+.zen-resources{
+	width: 400px;
+	height: 150px;
+	font-size: 18px;
+	border-radius: 200px;
+	background-color: rgba(255, 235, 205, 0.575);
+	margin-top: 20px;
+	box-shadow: 20px 20px 10px rgb(240, 203, 152);
+	text-align: center;
+	border-right: solid 5px burlywood;
+	border-bottom: solid 5px burlywood;
+}
+.zen-resources:hover{
+	transform: scale(1.2);
+}

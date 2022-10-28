@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table and form</title>
+    <link rel="stylesheet" href="./table.css">
+</head>
+<body>
+    <!-- les tableaux -->
+<!-- les tableaux simples -->
+<!--  la première balise à connaître est <table></table> -->
+<p>mon premier tableau</p>
+<table>
+    <caption>liste</caption>
+    <!-- 2 nouvelle bases très importants: <tr></tr>(début et fin d'un ligne) et <td></td>; début et fin du contenu d'une cellule
+         en HTML, on construitnos tableaux ligne par ligne. dans chaque ligne (tr) on trouve différentes cellules(td) -->
+         <!-- on rajoute ligne d'en tête avec des cellule en <th></th> -->
+        <!-- en tête du tableau avec la balise <thead> -->
+        <thead>
+            <tr>
+                <th>nom</th>
+                <th>age</th>
+                <th>hoppy</th>
+            </tr>
+        </thead>
+
+        <tbody>
+                <tr>
+                    <td>a</td>
+                    <td>1</td>
+                    <td>sing</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td>2</td>
+                    <td>dansing</td>
+                </tr>
+                <tr>
+                    <td>c</td>
+                    <td>3</td>
+                    <td>sport</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>d</td>
+                <td>4</td>
+                <td>sport</td>
+            </tr>
+            <tr>
+                <td>e</td>
+                <td>5</td>
+                <td>sport</td>
+            </tr>
+        </tfoot>
+         <!-- 2  les tableaux structurés -->
+         <!-- il est possible de diviser thead tbody tfoot-->
+</table>
+<!-- 3 la fusion de cellules -->
+<!-- il existe 2 types de fusion, la fusion de colonnes et la fusion de rangée, pour la première, on va utiliser l'attribut colspan sur nos td, pour la seconde, l'attribut rowspan -->
+<p>mon 2ème tableau</p>
+<table>
+    <tr>
+        <th>titre du film</th>
+        <th>pour les enfants</th>
+        <th>pour les ados</th>
+    </tr>
+    <tr>
+        <td>ddddddddd</th>
+        <td>ssssssss</th>
+        <td>hhhhhhhh</th>
+    </tr>
+    <tr>
+        <td>uuuuuuuuuuu</th>
+        <td>kllllllll</th>
+        <td>mmmmmmmmmmm</th>
+    </tr>
+    <tr>
+        <td>zzzzzzzzzz</th>
+        <td>rrrrrrrrrrr</th>
+        <td>ffffffffffff </th>
+    </tr>
+</table>
+
+
+
+
+
+<p>mon 3ème tableau</p>
+<table>
+    <tr>
+        <th>titre du film</th>
+        <th>pour les enfants</th>
+        <th>pour les ados</th>
+    </tr>
+    <tr>
+        <td>ddddddddd</th>
+        <td>ssssssss</th>
+        <td>hhhhhhhh</th>
+    </tr>
+    <tr>
+        <td>uuuuuuuuuuu</th>
+        <td>kllllllll</th>
+        <td>mmmmmmmmmmm</th>
+    </tr>
+    <tr>
+        <td>zzzzzzzzzz</th>
+            <!-- il n'y a que 2 balises td car colspan="2"signifie que ma dernière cellule va prendre de la place pour 2 -->
+        <td colspan="2">rrrrrrrrrrr</th>
+     
+    </tr>
+</table>
+
+<p>fusion verticale</p>
+
+<table>
+    <tr>
+        <th>titre du film</th>
+        <td>vélo</td>
+        <td>bus</td>
+        <td>car</td>
+           
+    </tr>
+    <tr>
+        <th>pour les enfants</th>
+        <td>non, violet</td>
+        <td>oui</td>
+        <!-- je fusionne les cellules verticalement -->
+        <td rowspan="2">oui, pour la famille</td>
+    </tr>
+    <tr>
+        <th>pour les ados</th>
+        <td>non, violet</td>
+        <td>oui</td>
+       
+    </tr>
+  
+</table>
+<br><br><br><br><br><br><br><br><br>
+
+<!-- les formulaires -->
+<!-- on peut rajouter des formulaires interactifs afin de permettre aux utilisateur-rice de saisir du texte, sélectionner des options,
+valider le tout avec un bouton, etc. -->
+<!-- c'est cependant ici qu'arrive la limite du HTML car me traitement des données est géré par d'autres langues, notamment de programmation(php, node.js, asp.net...) -->
+
+<p>mon premier formulaire</p>
+<!-- nous devons rajouter 2 attributs afin de faire fonctionner notre formulaire,
+    -tout d'abord méthode qui va indiquer par quel moyen on envoie les données.généralement on lui passe ma valeur post (que l'on préférera à get)
+    -ensuite, la méthode action, c'est l'adresse de la page ou du programme qui va traiter nos info, ce n'est jamais en html, la plupart du temps php -->
+<form method="post" action="">
+    <!-- les zones de texte basiques -->
+    <!-- il exsite 2 types: les monoligne et les multipleligne -->
+    <!-- pour insérer une zone de texte dans une ligne, on va utiliser orpholine<input/> que l'on retrouvera quasi-systématiquement, 
+        mais avec la valeur de son attribut type qui va changer -->
+        <!-- il faut lui donner un nom grace à un name, il n'apparait pas , mais est nécessaire pour être traité par le back-end  -->
+        <!-- on rajoute une balise <label></label> afin d'aiguiller les utilisateur-rice -->
+        <!-- afin de lier les deux ensemble, nous allons donner un id à notre input, attention: l'id sert à identifier l'élément en html alors que name correspond à la variable que l'on va envoyer en back -->
+        <label for="prenom">prénom</label>:
+
+
+        <input type="text" name="prenom" id="prenom" placeholder="enter..." 
+        size="25" maxlength="30">
+        <br>
+        <label for="mdp">mot de passe</label>:
+    
+        <input type="password" name="mdp" id="mdp">
+<br>
+<!-- zone de texte multiplelignes -->
+<label for="message">qu'avez-vous à dire?</label><br>
+<!-- on utilise textarea plutôt qu'un input -->
+<textarea name="message" id="message" >réfléchir...............</textarea>
+
+</form>
+
+<!--2  les zone de saisie enrichies  -->
+
+<p>les zones de saisie enrichies</p>
+<form>
+    <!-- le courriel (si ce champls est obligatoire, le telephone -->
+    <label for="email">votre email:</label>
+    <input type="email" name="email" id="email"  >
+<br>
+    <label for="tel">téléphone:</label>
+    <input type="tel" name="tel" id="tel"  >
+<br>
+    <label for="url">url de votre site</label>
+    <input type="url" name="url" id="url">
+<br>
+    <label for="number">nombre d'enfants</label>
+    <!-- on peut personnaliser le fonctionnement avec les attributs que voici:
+    min: valeur minimale,
+    max : valeur maximale,
+     step: saute de x en x, x étant ma valeur de step -->
+    <input type="number" name="number" id="number" min="0" max="100" step="1">
+    <br>
+<!-- un curseur qui prend min, max, step -->
+    <label for="range">taille en cm:</label>
+    <input type="range" name="range" id="range" min="0" max="100" step="1"
+    oninput="this.nextElementSibling.value=this.value">
+    <!-- output affiche le résultat contenu dans l'attribut onput -->
+
+    <!-- des couleurs -->
+    <label for="color">couleur des yeux:</label>
+    <input type="color" name="color" id="color">
+    <br>
+<!-- les dates -->
+<!-- plusieurs formats existent:
+date(07/08/1990)
+time(13:12)
+week
+month
+datetime(date+heure)
+date-local(date+heure sans gestion du décalage horaire)
+ -->
+ <label for="date">date de naissaince</label>
+ <input type="date" name="date" id="date">
+ <br>
+ <!-- les recherche -->
+ <label for="search">Rechercher un profil:</label>
+ <input type="search" name="search" id="search">
+ <br>
+
+</form>
+ <!-- les éléments d'option -->
+ <p>cochez les films nuls</p>
+ <!-- si le film est vraiment nul, on peut pré-cocher la case avec  -->
+ <form>
+
+ </form><input type="checkbox" name="interstellar" id="interstellar"><label for="interstellar">interstellar</label>
+ <input type="checkbox" name="interstellar" id="interstellar"><label for="interstellar">interstellar</label>
+ <input type="checkbox" name="interstellar" id="interstellar"><label for="interstellar">interstellar</label>
+ <input type="checkbox" name="interstellar" id="interstellar"><label for="interstellar">interstellar</label>
+
+
+</form>
+<!-- les zones d'option -->
+<form>
+    <p>veuillez définir votre identité de genre:</p>
+    <input type="radio" name="gender" value="male">
+    <label for="male">masculin</label>
+    <br>
+    <input type="radio" name="gender" value="female">
+    <label for="female">féminin</label>
+    <br>
+    <input type="radio" name="gender" value="nb">
+    <label for="nb">non-binaire</label>
+    
+
+</form>
+<!-- les liste déroulantes -->
+<form>
+    <p>
+        <label for="country">de quelle origine êtes-vous?</label>
+        <!-- si on va utiliser la balise <select>, pour donner une valeur par défaut, nous utilisont selected -->
+            <!-- on peut grouper nos options grâce à optgroup -->
+            <select name="country" id="country">
+                <optgroup label="europe">
+                <option value="fr">française</option>  
+                <option value="en">anglaise</option>
+            </optgroup>
+                <optgroup label="asie">
+                <option value="ch">chinoise</option>
+            </optgroup>
+            <optgroup label="afrique">
+                <option value="mr" selected>marocaine</option>
+            </optgroup>
+              
+            </select>
+
+    </p>
+</form>
+<!-- finaliser en envoyer le formulaire -->
+<!-- regrouper les champs avec fieldset -->
+<form method="post" action="assets/programmation/process_form.php">
+    <!-- le première groupe -->
+    <fieldset>
+        <!-- pour sélectionner automatique un champs on peut utiliser autofocs -->
+        <legend> vos coordonnées:</legend>
+        <label for="nom">Nom:</label>
+        <input type="text" name="nom" id="nom" autofocus>
+        <br>
+        <label for="prenom">prénom:</label>
+        <input type="text" name="prenom" id="prenom">
+        <label for="email">email: *</label>
+       
+        <input type="email" name="email" id="email" required>
+        <br>
+
+    </fieldset>
+
+    <fieldset>
+
+    </fieldset>
+    <!-- le bouton d'envoi -->
+    <!-- il existe 4 versions:
+    -type="submit" 
+    -type="reset"
+    -type="image"
+    - type=button: bouton générique, sans effet par défaut, géré par JS-->
+    <input type="reset" value="remise à zéro">
+    <br>
+    <input type="submit" value="envoyer">
+    <input type="image" value="image">
+</form>
+
+
+</body>
+</html>

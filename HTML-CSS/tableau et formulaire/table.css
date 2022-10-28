@@ -1,0 +1,18 @@
+/* il existe une propriété CSS particulière aux tableaux qui nous permet
+de recoller les bordures entre elles, il s'agit de border-collapse qui , par défaut */
+table{
+    border-collapse: collapse;
+    
+}
+th,td{
+    border:1px solid black;
+    padding:0.5em;
+}
+/* avec la propriété caption-side, je peux positionner mon titre en haut, ou en bas */
+caption{
+    caption-side: top;
+}
+input{
+    margin-bottom: 2em;
+}
+/* on peut changer l'apparence des requied et focus grâce aux pseudo-classe: required et :focus */

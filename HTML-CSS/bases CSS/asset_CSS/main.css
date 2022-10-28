@@ -3,6 +3,7 @@
 /*le h1 et b seront la même couleur grâce à la virgule*/
 
 h1, b{
+    font-family: 'Nabla', cursive;
     color:blueviolet
 }
 /*classe avec .*/
@@ -48,3 +49,118 @@ il en existe d'autres, mais moins utilisés
 p[title]{
     color:brown
 }
+/*la taille de police*/
+/*on a les valeurs absolues exprimées en pixel, centimètres et en mimmimètre; on ne les utilise que si c'est strictement nécessire*/
+/*on a les valeurs relatives exprimées en %, en em, en rem, vw et vh (on a aussi xx-small, x-samll, medium, large, x-large et xx-large; mais nous n'avons que 7 tailles dispo
+une des valeurs les plus utilisées est em
+si font-size: 1em; alors le text a une taille  normale pour augmenter sa taille de 30% on passe 1.3em à font-size, pareil pour réduire, 0.7em;
+
+*/
+.border-left{
+    border-left: 1px solid #5C90DC
+}
+
+.color-exemple{
+    background-color: hsl(182, 25%, 50%, 0.5);
+    width: 200px;
+    height: 500px;
+}
+/*image de fond*/
+.bg-img{
+    height: 300px;
+    background-image: url("../asset_CSS/logo.png") ;
+    background-repeat: no-repeat;
+    background-size: civer;
+}
+.multi-class div{
+    height: 40px;
+    width: 40px;
+    margin: 2em;
+
+}
+.bg-green{
+    background-color: red;
+}
+.circle{
+    background-color: green;
+}
+.opacity-5{
+    background-color: blue ;
+
+}
+/*les bordures*/
+/*pour border-radius, on peut appliquer des arrondis différents: border-radius: top-left, top-right
+botton-right bottom-left*/
+.border{
+    border:2px solid black;/*border:2px 0 2px 0 solid black
+    ou bien: border: 2px 0 solid black
+    */
+    border-radius: 20px 10px 0 5px;
+    background-color: #5C90DC;
+    color:wheat
+    
+}
+/*les ombres*/
+.shadow{
+    box-shadow: 5px 5px 10px black;
+    /*la dernière valeur sert à adoucir le ton*/
+    text-shadow: 2px 2px 4px black;
+}
+.shadow-inset{
+    
+}
+.link-bulma a{
+text-decoration: none;/*supprimer l'underline par défaut*/
+color:#5C90DC
+}
+/*pour le hover*/
+.link-bulma a:hover{
+    color:aliceblue;
+    background-color: rgb(76, 72, 110);
+}
+.par-hover:hover{
+    background-color: coral;
+    color: aliceblue;
+
+}
+/*au click*/
+.link-bulma a:active{
+    font-size: 40px;
+    color:darkcyan;
+    background-color: rgb(50, 33, 202);
+}
+.link-bulma a:focus{
+
+    color:darkcyan;
+    background-color: rgb(97, 116, 55);
+}
+.link-bulma a:visited{
+   
+    color:darkcyan;
+    background-color: rgb(50, 33, 202);
+}
+.marge p{
+    width: 300px;
+    height: 100px;
+    border:1px solid black;
+    text-align: justify;
+    margin:0 auto;
+
+}
+.marge p:first-of-type{
+    padding:5em;
+}
+.marge p:nth-child(2){
+    margin:12em
+}
+.marge p:last-child{
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+/*de la même manière que ce que l'on a vu précédemment, on aurait du écrire:
+  marge*/
+  /*overflow:auto*/
+

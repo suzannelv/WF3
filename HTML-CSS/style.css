@@ -1,5 +1,119 @@
 body{
-    background-color: bisque;
+    background-image: url("") ;
+    font: normal 700 20px;
+    
+}
+
+a{
+    text-decoration: none;
+}
+div{
+    width: 600px;
+    height: 400px;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+   
+    flex-direction: row;
+
+}
+
+    
+
+#profil{
+    width: 100px;
+    height: 100px;
+    
+
+}
+#coor div{
+  
+    
+}
+.obj{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.corps div{
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.comp. div{
+    display: flex;column-reverse;
+    border: 2px black;
+    background-color:peachpuff;
+    border-radius: 20px 5px;
+    box-shadow: 10px 5px 5px;
+    text-shadow: 5px 5px 10px;
+    text-align: center;
+    height: 250px;
+    color: rgb(40, 32, 48);
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 20px;
+
+
+}
+
+.comp ul {
+    width: 15%;
+    margin:auto;
+}
+.formation{
+    border: 2px solid black;
+  
+    border-radius: 50px;
+    box-shadow: inset;
+    text-shadow: 2px 2px 10px;
+    text-align: center;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 20px;
+}
+.exp{
+    border: 2px solid black;
+
+    border-radius: 50px;
+    box-shadow: inset;
+    text-shadow: 2px 2px 10px;
+    text-align: center;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 20px;
+}
+.exp ul{
+    width: 15%;
+    margin:auto;
+
+}
+.hoppy{
+    border: 2px solid black;
+
+    border-radius: 50px;
+    box-shadow: inset;
+    text-shadow: 2px 2px 10px;
+    text-align: center;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 20px;
+}
+.hoppy ul{
+    width: 15%;
+    margin:auto;}
+
+.article{
+    border: 2px solid black;
+
+    border-radius: 50px;
+   
+    text-shadow: 2px 2px 10px;
+    text-align: center;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 20px;
+
+}  
+.article ol{
+    width: 15%;
+    margin:auto;
 }
 mark{
     background-color: green; color: blue;
