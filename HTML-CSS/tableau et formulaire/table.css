@@ -1,5 +1,19 @@
 /* il existe une propriété CSS particulière aux tableaux qui nous permet
 de recoller les bordures entre elles, il s'agit de border-collapse qui , par défaut */
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1864/1864514.png);
+    background-repeat: repeat-x repeat-y;
+    background-size: 5%;
+    font-size: 20px;
+    color: brown;
+    text-shadow: 1px 1px 0;
+    
+}
+
 table{
     border-collapse: collapse;
     
@@ -7,12 +21,59 @@ table{
 th,td{
     border:1px solid black;
     padding:0.5em;
+    width: 150px;
+ height: 70px;
+ white-space: wrap;
 }
+
 /* avec la propriété caption-side, je peux positionner mon titre en haut, ou en bas */
 caption{
     caption-side: top;
+    font-size: 18px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
 }
 input{
     margin-bottom: 2em;
 }
 /* on peut changer l'apparence des requied et focus grâce aux pseudo-classe: required et :focus */
+h1{
+    color: rgb(139, 103, 25);
+    text-align: center;
+    text-shadow: 1px 1px 0 black;
+    font-size:40px
+}
+.container{
+    width: 1000px;
+    background-color: rgba(241, 237, 234, 0.938);
+    margin: 50px auto;
+    border-radius: 100px;
+    box-shadow: 10px 10px 10px;
+}
+form{
+  margin-left: 300px;
+  padding-top: 50px;
+}
+.tb{
+    width: 600px;
+    height: 280px;
+    text-align: center;
+   margin-left: -90px;
+   
+}
+textarea{
+    width: 600px;
+    height: 200px;
+    margin-left: -70px;
+}
+.file{
+    margin-left: -70px;
+}
+.login{
+    display: inline-block;
+    margin: 0 0;
+    height: 30px;
+    width: 30px;
+}

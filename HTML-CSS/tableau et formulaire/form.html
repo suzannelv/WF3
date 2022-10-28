@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://api.staticforms.xyz/submit" method="post">
+        <label for="prenom">prénom</label>:
+            <input type="text" name="prenom" id="prenom" placeholder="votre prénom" 
+            size="25" maxlength="30">
+            <br>
+            <label for="mdp">mot de passe</label>:
+            <input type="password" name="mdp" id="mdp">
+    <br>
+       
+        <input type="text" name="email" placeholder="Your Email" />
+        <br>
+        Genre:
+        <input type="radio" name="gender" value="male">
+        <label for="male">masculin</label>
+        <br>
+        <input type="radio" name="gender" value="female">
+        <label for="female">féminin</label>
+        <br>
+        <input type="radio" name="gender" value="nb">
+        <label for="nb">non-binaire</label>
+        <label for="tel">téléphone:</label>
+        <input type="tel" name="tel" id="tel"  >
+    <br>
+        <label for="url">url de votre site</label>
+        <input type="url" name="url" id="url">
+    <br>
+        <label for="number">nombre d'enfants</label>
+        
+        <input type="text" name="honeypot" style="display:none">
+        <input type="hidden" name="accessKey" value="3c18b648-d21b-4120-98e6-e26cf8065307">
+        <input type="hidden" name="subject" value="Contact us from - example.com" />
+        <input type="hidden" name="replyTo" value="@">
+        <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+        <input type="submit" value="Submit" />
+
+   
+    <label for="message">qu'avez-vous à dire?</label>
+    <br>
+   
+    <textarea name="message" id="message" >c'est à vous à dire...</textarea>
+       
+        <label for="range">taille en cm:</label>
+        <input type="range" name="range" id="range" min="0" max="100" step="1"
+        oninput="this.nextElementSibling.value=this.value">
+        
+        <label for="color">couleur des yeux:</label>
+        <input type="color" name="color" id="color">
+        <br>
+    
+     <label for="date">date de naissaince</label>
+     <input type="date" name="date" id="date">
+     <br>
+  
+     <label for="search">Rechercher un profil:</label>
+     <input type="search" name="search" id="search">
+  
+        <p>
+            <label for="country">de quelle origine êtes-vous?</label>
+          
+                <select name="country" id="country">
+                    <optgroup label="europe">
+                    <option value="fr">française</option>  
+                    <option value="en">anglaise</option>
+                </optgroup>
+                    <optgroup label="asie">
+                    <option value="ch">chinoise</option>
+                </optgroup>
+                <optgroup label="afrique">
+                    <option value="mr" selected>marocaine</option>
+                </optgroup>
+                  
+                </select>
+    
+        </p>
+    
+    
+      
+        <fieldset>
+           
+            <legend> vos coordonnées:</legend>
+            <label for="nom">Nom:</label>
+            <input type="text" name="nom" id="nom" autofocus>
+            <br>
+            <label for="prenom">prénom:</label>
+            <input type="text" name="prenom" id="prenom">
+            <label for="email">email: *</label>
+           
+            <input type="email" name="email" id="email" required>
+            <br>
+    
+        </fieldset>
+    
+    
+</body>
+</html>

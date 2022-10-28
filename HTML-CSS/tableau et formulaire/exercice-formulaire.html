@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="table.css">
+    <title>exercice formulaire</title>
+</head>
+<body>
+    <h1>Questionnaire</h1>
+  
+    <div class="container">
+    <form action="https://api.staticforms.xyz/submit" method="post">
+        <input type="text" name="honeypot" style="display:none">
+        <input type="hidden" name="accessKey" value="3c18b648-d21b-4120-98e6-e26cf8065307">
+        <input type="hidden" name="subject" value="Contact us from - example.com" />
+        <input type="hidden" name="replyTo" value="@">
+        <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+
+        <label for="prenom">Prénom</label>:
+            <input type="text" name="$prenom" id="prenom" placeholder="votre prénom" 
+            size="25" maxlength="30">
+            <br>
+            <label for="email">Votre email:</label>
+            <input type="email" name="email" id="email"  >
+        <br>
+            <label for="tel">Téléphone:</label>
+            <input type="tel" name="$tel" id="tel"  >
+        <br>
+            <label for="url">Url de votre site</label>
+            <input type="url" name="$url" id="url">
+        <br>
+        <label for="range">Votre taille (en cm):</label>
+        <input type="range" name="$range" id="range" min="0" max="100" step="1"
+    oninput="this.nextElementSibling.value=this.value">
+    <br>
+    <label for="color">Couleur des yeux:</label>
+    <input type="color" name="$color" id="color">
+    <br>
+    <br>
+    1. Genre:
+    <br>
+        <input type="radio" name="$gender" value="male">
+        <label for="male">masculin</label>
+        <br>
+        <input type="radio" name="$gender" value="female">
+        <label for="female">féminin</label>
+        <br>
+        <input type="radio" name="$gender" value="nb">
+        <label for="nb">non-binaire</label>
+        <br>
+    2. Age:
+        <input type="radio" name="$age" value="25"><label for="25">20-25</label>
+        <input type="radio" name="$age" value="30"><label for="25">26-30</label>
+        <input type="radio" name="$age" value="35"><label for="25">31-35</label>
+        <input type="radio" name="$age" value="40"><label for="25">36-40</label>
+        <br>
+    3. Votre origine:
+    <p>
+        <label for="ville">De quelle ville êtes-vous?</label>
+      
+            <select name="$ville" id="ville">
+                <optgroup label="Nord">
+                    <option value="bj">Pékin</option>  
+                    <option value="dl">Dalian</option>
+                    <option value="sy">Shenyang</option>
+                </optgroup>
+                    <optgroup label="Sud">
+                    <option value="gz">Guangshou</option>
+                    <option value="sz">Shenzhen</option>
+                    <option value="hn">Hainan</option>
+                </optgroup>
+                <optgroup label="Est">
+                    <option value="sh" selected>shanghai</option>
+                    <option value="hz">Hangzhou</option>
+                    <option value="nb">Ningbo</option>
+                </optgroup>
+                <optgroup label="Ouest">
+                    <option value=""></option>
+                </optgroup>
+                
+            </select>
+    </p>
+    <br>
+    4. Combien de temps êtes-vous resté en France?
+       <input type="number" name="$number" id="number" min="1" max="100" step="1">
+       <label for="number">an(s) </label>
+       <input type="number" name="$number" id="number" min="0" max="11" step="1">
+       <label for="number">mois</label>
+       <br><br>
+    5. Votre diplôme obtenu/en cours:
+    <br>
+        <input type="radio" name="$diplome" value="bac"><label for="bac">Bac</label><br>
+        <input type="radio" name="$diplome" value="licence"><label for="licence">licence</label><br>
+        <input type="radio" name="$diplome" value="master"><label for="master">Master</label><br>
+        <input type="radio" name="$diplome" value="doctorat"><label for="doctorat">Doctorat</label><br>
+        <br>
+    6. Votre niveau de français est:
+    <br>
+        <input type="radio" name="$level" value="b1"><label for="b1">B1</label><br>
+        <input type="radio" name="$level" value="b2"><label for="b2">B2</label><br>
+        <input type="radio" name="$level" value="c1"><label for="c1">C1</label><br>
+        <input type="radio" name="$level" value="c2"><label for="c2">C2</label><br>
+        <input type="radio" name="$level" value="autre"><label for="autre">Autre:</label> <input type="text" placeholder="précisez ici..." maxlength="
+        20">
+        <br>
+     7. Votre domaine d'étude:
+     <br>
+        <select name="$study" id="study">
+            <optgroup label="IT">
+                <option value="c++">C++</option>
+                <option value="java">Java</option>
+                <option value="js">Front-end</option>
+            </optgroup>
+            <optgroup label="Economie" id="eco">
+                <option value="market">Marketing</option>
+                <option value="finance">Finance</option>
+                <option value="comptable" selected>Comptabilité</option>
+            </optgroup>  
+            <optgroup label="Sciences humaines">
+                <option value="education">Sciences de l'éducation</option>
+                <option value="philo">Philosophie</option>
+                <option value="litt">Littérature</option>
+            </optgroup >
+        
+        </select>
+        <br><br>
+        8. La France était-elle votre destination de premier choix?<br>
+        <input type="radio" name="$choix" valeur="oui"><label for="oui">Oui</label> <br>
+        <input type="radio" name="$choix" valeur="non"><label for="non">Sinon, quel pays?<input type="text">
+        
+        <br>
+        9. Vos intérêts (options multiples): <br>
+         <input type="checkbox" name="$hoppy" value="sport">Sport <br>
+         <input type="checkbox" name="$hoppy" value="sport">Musique <br>
+         <input type="checkbox" name="$hoppy" value="sport">Peinture <br>
+         <input type="checkbox" name="$hoppy" value="sport" ckecked>Photographe <br>
+         <input type="checkbox" name="$hoppy" value="sport">Front_end <br>
+
+<br>
+        <table class="tb">
+            <caption> 10. Comment avez-vous choisi l'université française?</caption>
+            <br><br>
+            <tr>
+                <td></td>
+                <td>Tout à fait <br> 5</td>
+                <td>4</td>
+                <td>3</td>
+                <td>2</td>
+                <td>Pas du tout 1</td>
+            </tr>
+            <tr>
+                <th>Elle est reconnue mondialement</th>
+                <td><input type="radio" name="$1" id="1"></td>
+                <td><input type="radio" name="$2" id="2"></td>
+                <td><input type="radio" name="$3" id="3"></td>
+                <td><input type="radio" name="$4" id="4"></td>
+                <td><input type="radio" name="$5" id="5"></td> 
+            </tr>
+            <tr>
+                <th>Elle une bonne qualité d'enseignement</th>
+                <td><input type="radio" name="$6" id="6"></td>
+                <td><input type="radio" name="$7" id="7"></td>
+                <td><input type="radio" name="$8" id="8"></td>
+                <td><input type="radio" name="$9" id="9"></td>
+                <td><input type="radio" name="$10" id="10"></td> 
+            </tr>
+            <tr>
+                <th>Elle a un bon classement mondial</th>
+                <td><input type="radio" name="$11" id="11"></td>
+                <td><input type="radio" name="$12" id="12"></td>
+                <td><input type="radio" name="$13" id="13"></td>
+                <td><input type="radio" name="$14" id="14"></td>
+                <td><input type="radio" name="$15" id="15"></td> 
+            
+            </tr>
+        
+        </table>
+        <br><br>
+        11. Vous avez d'autres remarques?<br>
+        <textarea name="$remarque" id="remarque" cols="30" rows="10">écrivez ici...</textarea>
+        <br><br>
+        <input type="submit" valeur="envoyer" src="https://cdn-icons-png.flaticon.com/512/8779/8779510.png">&nbsp;&nbsp;&nbsp;<input type="reset" valeur="clear"> &nbsp;&nbsp;&nbsp;
+        <input class= "login" type="image" src="https://cdn-icons-png.flaticon.com/512/8779/8779510.png">
+        
+    <br><br>
+    <p class="file">Télécharger vos dossiers supplémentaires ici: <input type="file" multiple></p>
+
+
+    </form>
+    <div>
+       <a href="mailto:adress@gmail.com?Sujet=contactez-moi"> Contactez-moi si vous avez des question</a>
+    </div>
+</div>
+</body>
+</html>
