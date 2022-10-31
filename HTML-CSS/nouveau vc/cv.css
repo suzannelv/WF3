@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: antiquewhite;
+    background-image: url(https://img.freepik.com/vecteurs-premium/empreinte-patte-chat-chien-chiot-animal-trace_177006-39.jpg?w=1380);
+    background-size: cover;
+}
+.head{
+    display: flex;
+    width: 1200px;
+    height: 300px;
+    margin: auto;
+    background-color: white;
+    background-image: url(https://img.freepik.com/vecteurs-premium/paysage-printemps-degrade-champ_23-2148426618.jpg?w=1380);
+    background-size:1200px 300px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+
+.head .left{
+     
+    float: left;
+    padding-left: 50px;
+    width: 500px; 
+    /* line-height: 300px; */
+   
+}
+.head .profil img{
+    padding-left:20px;
+    width: 200px;
+    height: 200px;
+    /* margin:auto; */
+
+}
+
+.head .profil:hover img{
+    transform: scale(1.2);
+}
+.head .name{
+    font:bold 25px;
+    margin-top:20px;
+    margin-left:75px; 
+}
+.head .sujet{
+    font-size: 20px;
+    color:rgb(21, 21, 19);
+    font-size: 500;
+}
+
+.head .right{
+  padding-top: 100px;
+  padding-left: 200px;
+    float: left;
+    width:600px;
+    /* line-height: 400px; */
+   
+    
+}
+hr{
+    width: 1200px;
+    color: red;
+    margin:auto;
+}
+.main{
+    display: flex;
+    margin:auto;
+    background-color: white;
+    /* border:2px solid lightblue; */
+    /* height: 1200px; */
+    width: 1200px;
+}
+.main .left{
+    float:left;
+    padding-left: 20px;
+    margin-top: 5px;
+    background-color: #52aded;
+    width: 300px;
+    
+}
+.main .left h2, dd,dt{
+    padding-left:20px;
+    line-height: 2em;
+    
+}
+.main .right{
+    float: right;
+    margin-left: 10px;
+    width: 900px;
+    margin-top: 5px;
+    background-color: antiquewhite;
+
+}
+.main .right .grade{
+    text-indent: 2em;
+}
+
+.main h2{
+    vertical-align: middle;
+    color: chocolate;
+}
+
+
+
+.main .right dt{
+    padding-top:15px;
+}
+.main .right .univ{ 
+    font-size:20px;
+    font-weight: 700;
+    
+    
+    line-height: 25px;
+    color:#332e3d;
+    padding-top: 5px;
+}
+.shiro{
+    width: 700px;
+    height: 200px;
+}
+.shiro img{
+    border-radius:50% ;
+    width: 100px;
+    transition: all 5s;
+   
+}
+.shiro:hover img{
+transform: translate(600px) rotate(360deg);
+    
+}
+
+.footer{
+    display: flex;
+    position:relative;
+    margin-top: 20px;
+    /* padding-top:30px; */
+    width: 1200px;
+    height: 200px;
+    margin:auto;
+    background-color: rgba(81, 209, 139, 0.268);
+    text-align: center;
+    line-height: 2em;
+    color: rgb(20, 47, 98);
+}
+.footer .films{
+    float: left;
+    width: 400px;
+    height: 400px;
+    /* background-color: #0e192145; */
+}
+.footer .jeux{
+    float: left;
+    width: 400px;
+    height: 400px;
+    /* background-color: #d0492a; */
+}
+.footer .musiques{
+    float: left;
+    width: 400px;
+    height: 400px;
+    /* background-color: #af66c5; */
+}
+

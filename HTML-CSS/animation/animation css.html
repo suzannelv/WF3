@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./animation.css">
     <title>Animation CSS</title>
 </head>
@@ -74,9 +75,31 @@
             </div>
 
         </section>
+        <section aria-labelledby="icon-accesss">
+        <!-- grace à aria-labelledeby, je peut lire le titre de ma section (avec son ID) à ma section, ainsi, les logiciel d'aide à la lecture permettront de directement pointer sur la section qui les intéresse directement à l'ouverture du document  -->
+            <h2>icon & accessibilité</h2>
+            <!-- aria-label indique à l'utilisateur qui utilise un logiciel d'aide à la lecture que le contenu de la div représente une note de 4 étoiles sur 5 -->
+            <div class="rating" aria-label="note 4 étioles sur 5 ">
+                <!-- je cache le contenu (illisible pour les logiciels) grace à aria-hidden avec la valeur true -->
+                <ul aria-hidden="true" >
+                    <li><i class="fa-regular fa-face-smile blue"></i></li>
+                    <li><i class="fa-regular fa-face-smile yellow"></i></li>
+                    <li><i class="fa-regular fa-face-smile green"></i></li>
+                    <li><i class="fa-regular fa-face-smile red"></i></li>
+                    <li><i class="fa-regular fa-face-smile pink"></i></li>
+                </ul>
+            </div>
+        </section>
     </main>
     <footer>
         WF3-2020
+        <ul>
+            <li><a href="#" aria-label="devenez fan!"><i class="fa-solid fa-heart" aria-hidden="true"></i></a></li>
+            <li> <a href="#"><i class="fa-solid fa-umbrella"></i></a></li>
+            <li> <a href="#"><i class="fa-regular fa-face-smile"></i></a><li>
+        </ul>
+         
+       
     </footer>
 </body>
 </html>
