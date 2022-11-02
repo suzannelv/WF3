@@ -164,9 +164,10 @@ html{
     transition-delay: 0, 500ms;
 
 }
-footer ul{
-    display: 
-    flex;
+.rating ul li{
+   display: flex;
+   float:left;
+   justify-content: space-between;
 }
 
 footer ul li{

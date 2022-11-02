@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+   background-image: url(https://img.freepik.com/photos-gratuite/fond-gris-peint_53876-94041.jpg?w=1380&t=st=1667390430~exp=1667391030~hmac=f51d19341b30df3260e60f4e136e77bd2cb5b1d87aac7d451fa6dfabd77581c4);
+   background-size: cover;
+}
+section{ 
+    width: 1200px;
+    margin: 20px auto;
+    
+    /* margin:50px auto; */
+}
+.top .note-top img{
+    padding-top: 20px;
+    margin-left:20px;
+        width: 80px;
+        height: 80px;
+        z-index: 5;
+        transform: all 5s;
+        animation: note-top 5s linear infinite 2s alternate;
+}
+@keyframes note-top{
+    to{
+        transform: translateY(300px) rotateY(360deg);
+    }
+}
+.top .presentation{
+    position: absolute;
+    left:120px;
+    top:150px;
+    color:white;
+    font-size: 50px;  
+    font-weight: 700;
+    transform: rotate(-90deg);
+    text-shadow: 2px 2px 5px white;
+
+}
+.top{
+    position: relative;
+    height: 500px;
+    background-color: black;
+    /* margin-bottom: 0; */
+    /* background-image: url(./images/fond\ top.png); */
+  
+    
+}
+.profil .text{
+    position: absolute;
+    left: 700px;
+    top:30px;
+    font-size:14px;
+    width: 400px;
+    color:white;
+    line-height: 1.5em;
+}
+.profil img{
+    position: absolute;
+    left:700px;
+    top:200px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 5px 5px 16px black;
+
+
+}
+
+.middle .nav{
+    /* position:relative; */
+   
+    margin:0 auto;
+    width: 1200px;
+    height: 40px;
+    /* margin-bottom: 0; */
+    /* background-color: grey
+    ; */
+}
+.middle .nav .ul{
+    display: flex;
+    width: 70%;
+}
+.middle .nav li{
+    position:relative;
+  
+    width: 233px;
+    height: 40px;
+    line-height: 40px;
+    transition:all 0.5s;
+    transform-style: preserve-3d;
+    /* transform: scale3d(, 1.1, 2); */
+}
+
+.middle .nav li a{
+    position: absolute;
+    left:0;
+    top:-20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    color: grey;
+
+}
+.middle .nav li a:first-child{
+    background-color: rgb(29, 25, 25);
+    /* transform: translateZ(20px); */
+}
+.middle .nav li a:last-child{
+    background-color:white;
+    transform: rotateX(90deg) translateZ(20px)  translateY(-20px); 
+}
+.middle .nav li:hover{
+    transform: rotateX(-90deg);
+}
+
+.bottom{
+
+    /* position:relative; */
+ display: flex;
+ margin-top:-20px;
+ /* float:left; */
+ /* margin-top:0; */
+    background-color: white;
+    line-height: 2em;
+    z-index: 4;
+}
+.bottom audio{
+    padding-top: 10px;
+    padding-left:30px;
+    position: absolute;
+}
+.bottom .bases{
+    margin-left:80px;
+    padding-top:120px;
+    width: 350px;
+}
+.bottom .experience{
+    padding-top:120px;
+    width: 350px;
+    margin-left: 100px;
+
+}
+.bottom .education{
+    margin-bottom: 80px;
+    padding-top:120px;
+    width: 350px;
+}
+.bottom .note img{
+    width: 80px;
+    height: 80px;
+    /* position: absolute; */
+    z-index: 5;
+    padding-right:30px;
+    padding-top:30px;
+    transform: all 8s;
+    animation: note 6s linear infinite alternate;
+
+}
+@keyframes note{
+   to{
+    transform:translateY(500px) rotateY(360deg);
+   }
+       
+}
