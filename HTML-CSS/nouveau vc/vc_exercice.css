@@ -83,13 +83,15 @@ section{
     /* background-color: grey
     ; */
 }
-.middle .nav .ul{
+.middle .nav ul{
     display: flex;
+    
+    /* flex-direction: row; */
     width: 70%;
 }
 .middle .nav li{
-    position:relative;
-  
+    /* position:relative; */
+     
     width: 233px;
     height: 40px;
     line-height: 40px;
