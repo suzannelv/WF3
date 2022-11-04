@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./img/bg_fruit.png);
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+header{
+    width: 1920px;
+    height: 968px;
+    background-image: url(
+        ./img/banner.jpg
+    );
+    flex-wrap:wrap;
+}
+.flex{
+    display: flex;
+}
+header .logo{
+    margin-left: 380px;
+    margin-top:48px;
+}
+header nav ul{
+    margin-top:110px;
+    margin-left:100px;
+    width: 560px;
+    height: 42px;
+    line-height: 42px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header nav a {
+    color: black;
+}
+
+header .icon{
+    /* position:relative; */
+    margin-top:120px;
+    margin-left:44px;
+    width: 200px;
+    height: 42px;
+    text-align: center;
+    vertical-align: center;
+    
+    color: #a0cb23;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Font Awesome";
+}
+header .icon a{
+    color:#a0cb23;
+  
+}
+header .fa-solid{
+    /* position: absolute; */
+    margin-top:-15px;
+    padding-top: 10px;
+    width: 42px;
+    height: 42px;
+    background-color: white;
+    border-radius: 50%;
+
+    
+}
+header .text{
+    margin-left:400px;
+    margin-top: -120px;
+    width: 516px;
+    height: 250px;
+    line-height: 4em;
+    /* text-align: left; */
+
+}
+header .text h1 {
+    font-size: 48px;
+    padding-left:95px;
+}
+header .text .welcome{
+    font-size:20px;
+    color:#a0cb23;
+}
+header .text .delivery{
+    font-size:20px;
+    /* padding-left:60px; */
+}
+header .click{
+    width: 364px;
+    height: 52px;
+    justify-content: space-between;
+    /* text-align: center;
+    vertical-align: middle; */
+}
+header .course{
+    width: 173px;
+    height: 52px;
+    background-color:  #afe223;
+    color:white;
+    /* text-align: center; */
+
+}
+header .plus{
+    width: 173px;
+    height: 52px;
+    background-color:#14462d;
+    color:white;
+
+}
+
+main .wrapper{
+  
+    margin-top: 140px;
+    height: 348px;
+    justify-content: center;
+   
+}
+main .wrapper div{
+    /* position:relative; */
+    width: 348px;
+    height: 282px;
+    
+   flex-direction: row;
+ 
+}
+
+main .wrapper p {
+    color:white;
+}
+/* 
+main .wrapper img{
+    
+    width: 348px;
+    height: 282px;
+
+} */
+main .wrapper .title1{
+    font-size:20px;
+    padding-left:30px;
+    padding-top:60px;
+    padding-bottom:60px;
+    width: 150px;
+    line-height: 2em;
+}
+main .wrapper .benefit1{
+    font-size:16px;
+    color: rgba(255, 255, 255, 0.808);
+    /* padding-bottom:60px; */
+}
+
+main .wrapper .left{
+    position: relative;
+}
+
+main .wrapper .legume{
+    position:absolute;
+    /* width: 170px;
+    height: 280px; */
+    right:0;
+    bottom: 0;
+
+}
+
+main .wrapper .center{
+    position: relative;
+}
+main .wrapper .title2{
+    font-size:20px;
+    padding-left:30px;
+    padding-top:60px;
+    width: 200px;
+    line-height: 2em;
+    padding-bottom: -10px;
+}
+main .wrapper .benefit2{
+    font-size:16px;
+    color: rgba(255, 255, 255, 0.808);
+    padding-left:30px;
+    
+    
+}
+
+
+main .wrapper .boisson{
+    position:absolute;
+    /* width: 170px;
+    height: 280px; */
+    right:30px;
+    bottom: 20px;
+
+}
+
+
+main .wrapper .right{
+    position: relative;
+}
+main .wrapper .title3{
+    font-size:20px;
+    padding-left:30px;
+    padding-top:60px;
+    /* padding-bottom:60px; */
+    width: 150px;
+    line-height: 2em;
+    padding-bottom:30px;
+}
+main .wrapper .benefit3{
+    font-size:16px;
+    color: rgba(255, 255, 255, 0.808);
+    /* padding-bottom:60px; */
+    padding-left:30px;
+    
+}
+
+
+main .wrapper .cosmetic{
+    position:absolute;
+    /* width: 170px;
+    height: 280px; */
+    right:30px;
+    bottom: 20px;
+
+}
+main .wrapper div:nth-child(1){
+    background-color: #92ddd8 ;
+    margin-right:28px;
+
+}
+main .wrapper div:nth-child(2){
+    background-color: #fb9823;
+    margin-right:28px;
+    
+}
+main .wrapper div:nth-child(3){
+    background-color: #afe223;
+    
+}
+
+
+main .wrapper .center div {
+    background-color: #fb9823;
+}
+main .wrapper .right div {
+    background-color: #afe223;
+}
+
+main .description {
+    margin-top:60px;
+    height: 130px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    
+}
+
+main .description h2{
+    font-size:34px;
+    word-spacing: 2px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.767);
+
+
+}
+
+main .description span{
+font-size: 20px;
+color:#a0cb23;
+/* text-align: center; */
+text-shadow: 1px 1px 2px;
+}
+
+main .produit{
+    width: 1110px;
+    height: 990px;
+    margin:auto;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom:138px;
+
+    /* padding-bottom: 25px; */
+ 
+    /* background-color: aquamarine; */
+
+}
+
+main .produit div:nth-child(n+4){
+    margin-top:25px;
+
+}
+main .produit div{
+    width: 350px;
+    height: 482px;
+    background-color:#f6fbfa;
+    position:relative;
+    /* margin-bottom: 25px; */
+}
+main .produit img{
+    position: absolute;
+}
+/* main .produit img:nth-child(3){
+    padding- ;
+} */
+main .produit .heart{
+    position:absolute;
+    width: 46px;
+    height: 46px;
+    background-color: white;
+    border-radius: 50%;
+    top:20px;
+    right:20px;
+    padding-top:14px;
+    text-align: center;
+    vertical-align: center;
+
+}
+main .produit .heart .fa-heart{
+    color:rgb(143, 149, 155);
+    font-size:18px;
+    text-align: center;
+
+}
+main .produit  .vert{
+    background-color: #afe223;
+}
+main .produit .heart .white{
+    
+    color: white;
+}
+main .produit .fa-solid{
+    color:rgb(240, 217, 16)
+}
+main .produit .star{
+    padding-top:270px;
+    z-index: 5;
+    text-align: center;
+}
+main .produit h3, p, .ajouter{
+    text-align:center;
+    line-height: 2em;
+    
+}
+main .produit .del{
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.473);
+}
+
+main .produit .price{
+    color:#afe223;
+}
+main .produit .ajouter{
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    /* margin: auto; */
+    
+    background-color:#14462d;
+    vertical-align:bottom;
+    font-size: 14px;
+    color:white;
+    line-height: 40px;
+    bottom:55px;
+    left:117px;
+   
+}
+main .produit .broccoli{
+    background-color: #a0cb23;
+}
+
+main .produit .fraise{
+    left:20px;
+    top:35px;
+}
+main .produit .miel{
+    left:115px;
+    top:55px;
+}
+main .produit .lait{
+    top:-50px;
+}
+main .produit .mangue{
+    top:-40px
+}
+footer .foot{
+    position: relative;
+    margin:auto;
+    width: 1110px;
+    height: 222px;
+    background-color: #afe223;
+    background-image: url(./img/panier.jpg);
+    background-repeat: no-repeat;
+    background-position: 730px;
+   
+}
+footer .foot .sold{
+    position: absolute;
+    padding-left: 65px;
+    padding-top: 80px;
+    /* text-align: center; */
+    line-height: 1em;
+}
+footer .foot .sold span{
+
+    font-size:40px;
+    font-weight: 600;
+    color: #fffc00;
+}
+footer .foot .sold p{
+    font-size: 16px;
+    color:rgba(255, 255, 255, 0.788);
+    text-align: left;
+}
+footer .foot .mot{
+    text-align: left;
+}
+footer .foot .mot p{
+    padding-top: 30px;
+    font-size: 34px;
+    color:white;
+
+}
