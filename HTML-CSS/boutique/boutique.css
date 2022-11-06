@@ -16,6 +16,7 @@ li{
 header{
     width: 1920px;
     height: 968px;
+    margin:0 auto;
     background-image: url(
         ./img/banner.jpg
     );
@@ -40,20 +41,27 @@ header nav ul{
 header nav a {
     color: black;
 }
-
+header .icon i{
+    display:inline-block;
+    text-align: center;
+    /* vertical-align: middle; */
+    /* line-height: 42px; */
+    line-height: 22px;
+}
 header .icon{
     /* position:relative; */
     margin-top:120px;
     margin-left:44px;
     width: 200px;
     height: 42px;
-    text-align: center;
-    vertical-align: center;
+    
+    /* text-align: center;
+    vertical-align: center; */
     
     color: #a0cb23;
     flex-direction: row;
     justify-content: space-between;
-    font-family: "Font Awesome";
+    /* font-family: "Font Awesome"; */
 }
 header .icon a{
     color:#a0cb23;
@@ -69,6 +77,17 @@ header .fa-solid{
     border-radius: 50%;
 
     
+}
+header .icon .zero{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(3, 59, 3);
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: 700;
+    text-align:center;
+   margin-left: -18px;
+   margin-top:-10px;
 }
 header .text{
     margin-left:400px;
@@ -95,15 +114,20 @@ header .click{
     width: 364px;
     height: 52px;
     justify-content: space-between;
+    line-height: 52px;
+    text-align:center;
+    margin-left:-430px;
+    margin-top:180px;
     /* text-align: center;
     vertical-align: middle; */
 }
 header .course{
     width: 173px;
     height: 52px;
-    background-color:  #afe223;
+    background-color:  #a0cb23;
     color:white;
-    /* text-align: center; */
+
+
 
 }
 header .plus{
@@ -119,12 +143,14 @@ main .wrapper{
     margin-top: 140px;
     height: 348px;
     justify-content: center;
+ 
    
 }
 main .wrapper div{
     /* position:relative; */
     width: 348px;
     height: 282px;
+   
     
    flex-direction: row;
  
@@ -132,6 +158,9 @@ main .wrapper div{
 
 main .wrapper p {
     color:white;
+    display: inline-block;
+    text-align:left;
+    line-height: 2em;
 }
 /* 
 main .wrapper img{
@@ -140,18 +169,27 @@ main .wrapper img{
     height: 282px;
 
 } */
-main .wrapper .title1{
-    font-size:20px;
+/* main .wrapper .left{
+   
+} */
+main .wrapper .left .title1{
+    /* display:inline-block; */
+    font-size:22px;
     padding-left:30px;
     padding-top:60px;
     padding-bottom:60px;
     width: 150px;
     line-height: 2em;
+
+    text-align:left;
+
 }
 main .wrapper .benefit1{
-    font-size:16px;
+    font-size:18px;
     color: rgba(255, 255, 255, 0.808);
     /* padding-bottom:60px; */
+    padding-top:20px;
+  
 }
 
 main .wrapper .left{
@@ -171,15 +209,16 @@ main .wrapper .center{
     position: relative;
 }
 main .wrapper .title2{
-    font-size:20px;
+    font-size:22px;
     padding-left:30px;
     padding-top:60px;
     width: 200px;
     line-height: 2em;
     padding-bottom: -10px;
+    text-align:left;
 }
 main .wrapper .benefit2{
-    font-size:16px;
+    font-size:18px;
     color: rgba(255, 255, 255, 0.808);
     padding-left:30px;
     
@@ -201,7 +240,7 @@ main .wrapper .right{
     position: relative;
 }
 main .wrapper .title3{
-    font-size:20px;
+    font-size:22px;
     padding-left:30px;
     padding-top:60px;
     /* padding-bottom:60px; */
@@ -210,10 +249,11 @@ main .wrapper .title3{
     padding-bottom:30px;
 }
 main .wrapper .benefit3{
-    font-size:16px;
+    font-size:18px;
     color: rgba(255, 255, 255, 0.808);
     /* padding-bottom:60px; */
     padding-left:30px;
+    margin-top:-43px;
     
 }
 
@@ -250,7 +290,7 @@ main .wrapper .right div {
 }
 
 main .description {
-    margin-top:60px;
+    padding-top:80px;
     height: 130px;
     width: 400px;
     margin: auto;
@@ -259,7 +299,7 @@ main .description {
 }
 
 main .description h2{
-    font-size:34px;
+    font-size:42px;
     word-spacing: 2px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.767);
@@ -268,10 +308,10 @@ main .description h2{
 }
 
 main .description span{
-font-size: 20px;
+font-size: 24px;
 color:#a0cb23;
 /* text-align: center; */
-text-shadow: 1px 1px 2px;
+/* text-shadow: 1px 1px 2px; */
 }
 
 main .produit{
@@ -281,6 +321,7 @@ main .produit{
     flex-flow: row wrap;
     justify-content: space-between;
     margin-bottom:138px;
+    margin-top:100px;
 
     /* padding-bottom: 25px; */
  
@@ -305,6 +346,20 @@ main .produit img{
 /* main .produit img:nth-child(3){
     padding- ;
 } */
+
+main .produit .hot{
+    position:absolute;
+    width: 60px;
+    height: 30px;
+    background-color: red;
+    font-size: 18px;
+    font-weight: 700 ;
+    color:white;
+    text-align:center;
+    line-height: 30px;
+
+
+}
 main .produit .heart{
     position:absolute;
     width: 46px;
@@ -367,6 +422,9 @@ main .produit .ajouter{
     left:117px;
    
 }
+/* main .produit .beef{
+    top:-20px;
+} */
 main .produit .broccoli{
     background-color: #a0cb23;
 }
@@ -391,10 +449,27 @@ footer .foot{
     width: 1110px;
     height: 222px;
     background-color: #afe223;
-    background-image: url(./img/panier.jpg);
+    /* background-image: url(./img/panier.jpg);
     background-repeat: no-repeat;
-    background-position: 730px;
+    background-position: 730px; */
+    box-shadow: -3px 0 yellow;
    
+}
+footer .foot .pannier{
+    position: absolute;
+    right:0;
+    top:0;
+  /* float:right;
+  margin-right:-20px;
+  margin-top:-50px;
+  overflow: hidden; */
+}
+footer .foot .pannier img{
+   
+    
+    max-height: 222px;
+    border-top-left-radius: 300px;
+    box-shadow: -25px 0 rgb(211, 244, 60);
 }
 footer .foot .sold{
     position: absolute;
@@ -405,21 +480,34 @@ footer .foot .sold{
 }
 footer .foot .sold span{
 
-    font-size:40px;
+    font-size:60px;
     font-weight: 600;
     color: #fffc00;
 }
 footer .foot .sold p{
     font-size: 16px;
-    color:rgba(255, 255, 255, 0.788);
+    color:rgba(255, 255, 255, 0.872);
     text-align: left;
 }
 footer .foot .mot{
+    width: 320px;
+    height: 50px;
+    margin-left:320px;
     text-align: left;
+     /* white-space:wrap; */
+    
 }
 footer .foot .mot p{
-    padding-top: 30px;
+    padding-top: 50px;
     font-size: 34px;
     color:white;
+   
 
+}
+footer .foot .mot span{
+    margin-left:-147px;
+}
+.empty{
+   
+    height: 200px;
 }
