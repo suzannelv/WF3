@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+nav{
+    width: 1500px;
+    height: 60px;
+    margin: 35px auto;
+    line-height:60px ;
+    font-size:16px;
+    font-weight: 700;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* nav ul{
+    justify-content: space-around;
+} */
+nav .logo{
+    margin-top:5px;
+    width: 105px;
+    height: 24px;
+}
+
+nav ul li{
+    margin-right: 20px;
+}
+
+.banner_top{
+    position: relative;
+    /* top:0; 
+    right:0;
+    bottom:0;
+    left:0;
+     */
+    margin: 0 auto;
+    width: 1500px;
+    height: 640px;
+    color: white;
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/fr/homepage/football-festival-KV-desk-1440x640.jpg?imwidth=1366);
+
+    background-size: cover;
+}
+.banner_top .football{
+    position: absolute;
+    width: 700px;
+    height: 200px;
+    top:236px;
+    left:85px;
+    line-height: 4em;
+
+}
+.banner_top .football h1{
+    font-size: 50px;
+}
+.banner_top .football a{
+    display: inline-block;
+    text-align:center;
+    line-height: 40px;
+    width: 120px;
+    height: 40px;
+    font-size:16px;
+    font-weight: 600;
+    color:black;
+    border-radius: 50px;
+    background-color: white;
+}
+.banner_top .btn_lr{
+    position: absolute;
+    width: 1500px;
+    top:50%;
+    justify-content: space-between;
+    /* display: inline-block; */
+    
+}
+.banner_top .btn_lr .fa-solid{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.678);
+
+}
+.banner_top .btn_lr .fa-chevron-left{
+    margin-left:8px;
+}
+.banner_top .btn_lr .fa-chevron-right{
+    margin-right :8px;
+}
+
+.wrapper_center{
+    position:relative;
+  
+    width: 1500px;
+    margin:0 auto;
+    
+
+}
+.wrapper_center h2{
+    text-align: center;
+    margin-top:60px;
+    font-size: 40px;
+}
+.wrapper_center .navbar {
+  position:absolute;
+  width: 1500px;
+  /* left:50%;
+  transform: translateX(-50%); */
+  margin-top: 90px;
+  text-align: center;
+
+}
+.wrapper_center ul li{
+    display: inline-block;
+    margin-left:45px;
+    font-size: 20px;
+    font-weight: 600;
+    color:black;
+   
+}
+.wrapper_center .offre{
+    position: relative;
+    width: 1500px;
+    height: 684px;
+    margin:150px auto;
+      
+}
+.wrapper_center .offre img{
+    border-radius: 20px;
+}
+.wrapper_center .left{
+    position:relative;
+    width: 50%;
+    height: 100%;
+    color:white;
+ 
+}
+.wrapper_center .left .txt{
+    position:absolute;
+    width: 100%;
+    top:70px;
+    text-align:center;
+    /* left:50%;
+    transform: translateX(-50%);
+    */
+    line-height: 4em;
+  
+}
+.wrapper_center .right{
+    /* width: 683px; */
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+    margin-left:30px;
+    
+}
+
+.wrapper_center .right .produit{
+    position: relative;
+    width: 50%;
+    height: 50%;
+
+
+}
+ .wrapper_center .offre .produit:nth-child(n+3){
+    margin-top: 10px;
+ }
+ .wrapper_center .right .titre{
+    position:absolute;
+    width: 280px;
+    top:200px;
+    left:30px;
+    /* left:50%;
+    transform: translate(-50%, 0); */
+    color:white;
+    text-align: center;
+    white-space:wrap;
+    line-height: 2em;
+ }
+ /* .wrapper_center .right .profite{
+    position : absolute;
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: white;
+    color:black;
+    visibility:hidden;
+
+ }
+ .wrapper_center .right .profite:hover{
+    visibility: visible;
+ } */

@@ -5,6 +5,7 @@
 }
 body{
     background-image: url(./img/bg_fruit.png);
+    background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
 }
 a{
@@ -86,6 +87,7 @@ header .icon .zero{
     font-size: 10px;
     font-weight: 700;
     text-align:center;
+    line-height: 15px;
    margin-left: -18px;
    margin-top:-10px;
 }
@@ -149,9 +151,7 @@ main .wrapper{
 main .wrapper div{
     /* position:relative; */
     width: 348px;
-    height: 282px;
-   
-    
+    height: 282px; 
    flex-direction: row;
  
 }
@@ -169,9 +169,7 @@ main .wrapper img{
     height: 282px;
 
 } */
-/* main .wrapper .left{
-   
-} */
+
 main .wrapper .left .title1{
     /* display:inline-block; */
     font-size:22px;
@@ -180,7 +178,6 @@ main .wrapper .left .title1{
     padding-bottom:60px;
     width: 150px;
     line-height: 2em;
-
     text-align:left;
 
 }
@@ -333,30 +330,28 @@ main .produit div:nth-child(n+4){
     margin-top:25px;
 
 }
-main .produit div{
+main .produit div{ 
+    position:relative;
     width: 350px;
     height: 482px;
     background-color:#f6fbfa;
-    position:relative;
+   
     /* margin-bottom: 25px; */
 }
 main .produit img{
     position: absolute;
 }
-/* main .produit img:nth-child(3){
-    padding- ;
-} */
 
 main .produit .hot{
     position:absolute;
-    width: 60px;
-    height: 30px;
+    width: 50px;
+    height: 25px;
     background-color: red;
-    font-size: 18px;
-    font-weight: 700 ;
+    font-size: 16px;
+    font-weight: 600 ;
     color:white;
     text-align:center;
-    line-height: 30px;
+    line-height: 25px;
 
 
 }
@@ -379,7 +374,7 @@ main .produit .heart .fa-heart{
     text-align: center;
 
 }
-main .produit  .vert{
+main .produit .vert{
     background-color: #afe223;
 }
 main .produit .heart .white{
@@ -414,7 +409,7 @@ main .produit .ajouter{
     /* margin: auto; */
     
     background-color:#14462d;
-    vertical-align:bottom;
+    /* vertical-align:bottom; */
     font-size: 14px;
     color:white;
     line-height: 40px;
@@ -422,11 +417,14 @@ main .produit .ajouter{
     left:117px;
    
 }
-/* main .produit .beef{
-    top:-20px;
-} */
-main .produit .broccoli{
+main .produit .ajouter:hover{
     background-color: #a0cb23;
+}
+
+
+main .produit .ajout-b p{
+    margin-top:5px;
+
 }
 
 main .produit .fraise{
@@ -465,12 +463,11 @@ footer .foot .pannier{
   overflow: hidden; */
 }
 footer .foot .pannier img{
-   
-    
     max-height: 222px;
     border-top-left-radius: 300px;
     box-shadow: -25px 0 rgb(211, 244, 60);
 }
+
 footer .foot .sold{
     position: absolute;
     padding-left: 65px;
@@ -478,17 +475,20 @@ footer .foot .sold{
     /* text-align: center; */
     line-height: 1em;
 }
+
 footer .foot .sold span{
 
     font-size:60px;
     font-weight: 600;
     color: #fffc00;
 }
+
 footer .foot .sold p{
     font-size: 16px;
     color:rgba(255, 255, 255, 0.872);
     text-align: left;
 }
+
 footer .foot .mot{
     width: 320px;
     height: 50px;
@@ -497,6 +497,7 @@ footer .foot .mot{
      /* white-space:wrap; */
     
 }
+
 footer .foot .mot p{
     padding-top: 50px;
     font-size: 34px;
@@ -504,6 +505,7 @@ footer .foot .mot p{
    
 
 }
+
 footer .foot .mot span{
     margin-left:-147px;
 }
