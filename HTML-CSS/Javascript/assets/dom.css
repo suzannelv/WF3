@@ -1,0 +1,18 @@
+.blue {
+    color:blue;
+}
+
+.red {
+    color:red;
+}
+.bigFont {
+    font-size:1.5em;
+}
+.bold {
+    font-weight: bold;
+}
+
+#exClassList 
+{
+    margin-bottom:3em;
+}

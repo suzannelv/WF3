@@ -21,6 +21,7 @@ header{
     background-image: url(
         ./img/banner.jpg
     );
+    background-position: center;
     flex-wrap:wrap;
 }
 .flex{
@@ -513,3 +514,6 @@ footer .foot .mot span{
    
     height: 200px;
 }
+
+
+@media screen and (max)

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- on place le fichier CSS avant notre propre fichier de style afin que nous puissions surcharger les classes de bootstrap -->
+    <link rel="stylesheet" href="./assets/CSS/bootstrap.min.css">
+    <!-- mes styles perso -->
+    <link rel="stylesheet" href="./assets/CSS/main.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <main class="text-center">
+    <h1>Bootstrap</h1>
+    <h2>les brealpoints</h2>
+    <table class="table table-hover table-secondary table-striped table-responsive">
+        <tr>
+            <th>Taille</th>
+            <th>brealpoints</th>
+            <th>classe</th>
+            <th>taille d'écran</th>
+            
+        </tr>
+        <tr>
+            <th>très petite</th>
+            <th> 576px</th>
+            <th>aucun</th>
+            <th> petit smartphone</th>
+        </tr>
+        <tr>
+            <th>petite</th>
+            <th>>=576px</th>
+            <th>-sm</th>
+            <th>smartphone</th>
+        </tr>
+        <tr>
+            <th>moyenne</th>
+            <th>>=768px</th>
+            <th>-md</th>
+            <th>tablette</th>
+        </tr>
+        <tr>
+            <th>grande</th>
+            <th>>=992px</th>
+            <th>-lg</th>
+            <th>grande tablette/petit pc</th>
+        </tr>
+        <tr>
+            <th>très grande</th>
+            <th>>=1200px</th>
+            <th>-xl</th>
+            <th>écran 15"</th>
+        </tr>
+        <tr>
+            <th>très très grande</th>
+            <th>>=1400px</th>
+            <th>-xxl</th>
+            <th>écran>15"</th>
+        </tr>
+    </table>
+  <!-- je centre ma div grâce à text-center -->
+    <div class=" container text-center">   
+        <!-- j'insère une image responsive grâce à la classe img-fluid -->
+        <img src="./assets/img/ecran.jfif" alt="" class="img-fluid">
+    </div>
+   
+    <section class="exemple-container">
+        <h2>les containers</h2>
+        <p>
+            les containers sont les éléments de base de Bootstrap, ils enveloppent le contenu et sont nécessaires pour la mise en page
+        </p>
+        <div class="container">
+            mon contenu avec class="container", centré avec des marges
+        </div>
+        <div class="container-fluid">
+            mon contenu avec class="container-fluid,non-centré et sans marge"
+        </div>
+    </section>
+
+    <section class="grille">
+        <h2>les grilles</h2>
+        <p>Bootstrap possède un système de grilles, les grilles sont basés sur une succession de ligne (row) et de colonnes (col) qui vont nous aider à mettre en page nos documents.</p>
+        <p>une row permet d'intégrer une ou plusieurs col</p>
+        <img src="./assets/img/bootstrap-columns.png" alt="" class="img-fluid">
+
+        <!-- exemple -->
+        <h3>2 colonnes avec class="col"</h3>
+        <p>
+            chacun des div prend12/2=6colonnes
+        </p>
+        <div class="container">
+            <div class="row">
+                <div class="col bg-success">1ème colonne</div>
+                <div class="col bg-primary" >2èle colonne</div>
+            </div>
+        </div>
+        <p>X est un nombre donné, sachant que le total des deux ne peut pas dépasser 12 sinon, il y a retour à la ligne</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 bg-success">col 1</div>
+                <div class="col-8 bg-secondary">col 2</div>
+            </div>
+        </div>
+
+        <h3>les modificateurs de classe</h3>
+        <p>les modificateurs de classe se définissent au même niveau que nos blocs (div en l'occurence) dès que l'on franchit un breakpoint</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-9 bg-primary">1</div>
+                <div class="col-sm-12 col-md-6 col-lg-3 bg-secondary">2</div>
+            </div>
+        </div>
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 bg-primary">colonne 1</div>
+                <div class="col-sm-12 col-md-4 bg-secondary">colonne 2</div>
+                <div class="col-sm-12 col-md-4 bg-danger">colonne 3</div>
+
+            </div>
+        </div>
+        <br>
+
+         <h3>les gouttières (ou gutters)</h3>
+         <p class="lead">Pour gérer les espaces, on utilise la class .g-{1-5} (ou .g-1,/.g-2[...], .g-5 sachant que .g est le générique (col+row) et .gx-(1-5) concerne l'espace entre les colonnes et .gy-(1-5) l'espace entre les rangées</p>
+
+
+<!-- px-0 pour supprimer le marges des colonne de chaque coté -->
+        <div class="px-0 p-4 bg-warning">
+            <div class="row g-1">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="p-3  bg-danger ">colonne 1</div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class=" p-3 bg-primary">colonne 2</div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="p-3 bg-success">colonne 3</div>
+                </div>
+                
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="p-3 bg-secondary">colonne 4</div>
+               </div>
+
+            </div>
+        </div>
+
+        <h3>les offset</h3>
+        <p class="fw-bold">parfois; on a besoin de laisser un ou des espaces entre les colonnes, pour cela , on utilise les offset</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 bg-primary">.col-md-4</div>
+                <div class="col-md-4 offset-md-4 bg-success">.col-md-4;offset-md-4  </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 offset-md-3 bg-danger">col-md-3 offset-md-3</div>
+                
+                <div class="col-md-3 offset-md-3 bg-success">col-md-3 offset-md-3</div> 
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3 bg-primary">col-md-6 offset-md-3</div>
+            </div>
+        </div>
+    
+    
+
+    </section>
+
+ <section>
+    <h2>carousel</h2>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/berger-australien-mignon_138676-2071.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/chien-corgi-mignon-assis-illustration-icone-vecteur-dessin-anime-concept-icone-nature-animale-isole-vecteur-premium-style-dessin-anime-plat_138676-4181.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/illustration-icone-vecteur-dessin-anime-os-morsure-chien-mignon-concept-icone-nourriture-animale-isole-vecteur-premium-style-dessin-anime-plat_138676-4161.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+ </section>
+      
+</main>
+<!-- on place nos script avant la fin de la balise body, ou éventuellement dans le <head> mais avec 'defer' (sans valeur) -->
+    <script src="./assets/JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>
