@@ -7,6 +7,7 @@ J'ai besoin d'un titre, d'un-e réalisateur-rice, d'une durée totale en minutes
 
 Je dois afficher toutes ces oeuvres dans la console (pour le moment).
  */
+let remplacement=/ /gi;
 class Films {
     constructor( title, filmMaker, duration, timeWatchedMinute, description, image, years )
 
@@ -16,7 +17,8 @@ class Films {
     this.timeWatchedMinute = timeWatchedMinute;
     this.description = description;
     this.image = image;
-    this.years = years
+    this.years = years; 
+    this._id = title.toLowerCase().replace(remplacement, "_").replace(":", "")
 }
     
 }
@@ -74,7 +76,7 @@ list.innerHTML = `
             <li class="list-group-item">Année: ${movie.years}</li>
             </ul>
             <div class="card-body">
-                <a href="#" class="card-link btn btn-secondary text-decoration-none text-light">Play</a>
+                <a href="videotheque_page2.html?id=${movie._id}" class="card-link btn btn-secondary text-decoration-none text-light">Play</a>
                 <a href="#" class="card-link  btn btn-secondary text-decoration-none text-light">Pause</a>
             </div>    
         </div>
